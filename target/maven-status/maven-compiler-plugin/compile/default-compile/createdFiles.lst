@@ -1,0 +1,8 @@
+ru\serebryannikov\springlibapp\models\Person.class
+ru\serebryannikov\springlibapp\controllers\PeopleController.class
+ru\serebryannikov\springlibapp\dao\BookDAO.class
+ru\serebryannikov\springlibapp\config\MySpringMvcDispatcherSerlvetIntitializer.class
+ru\serebryannikov\springlibapp\config\SpringConfig.class
+ru\serebryannikov\springlibapp\controllers\BookController.class
+ru\serebryannikov\springlibapp\dao\PersonDAO.class
+ru\serebryannikov\springlibapp\models\Book.class
