@@ -40,16 +40,16 @@ public class BookDAO {
         jdbcTemplate.update("DELETE FROM book WHERE id=?", id);
     }
 
-    public Optional <Person> getBookPerson(int id) {
+    public Optional <Person> getBookOwner(int id) {
         return jdbcTemplate.query("SELECT * FROM book JOIN person ON book.person_id = person.id WHERE book.id=?",
                         new Object[]{id}, new BeanPropertyRowMapper<>(Person.class)).stream().findAny();
     }
 
-    public void appointBookPerson(int id, Person person){
+    public void assign(int id, Person person){
         jdbcTemplate.update("UPDATE Book SET person_id=? WHERE id=?", person.getId(), id);
     }
 
-    public void releaseBook(int id){
+    public void release(int id){
         jdbcTemplate.update("UPDATE Book SET person_id=NULL WHERE id=?", id);
     }
 }

@@ -15,7 +15,7 @@
 
 <div th:if="${people}">
     <span>Эта книга свободна. Кому её назначить?</span>
-    <form th:method="PATCH" th:action="@{/books/{id}/appoint(id=${book.getId()})}">
+    <form th:method="PATCH" th:action="@{/books/{id}/assign(id=${book.getId()})}">
         <label for="person">Выберите человека</label>
         <select th:object="${person}" th:field="*{id}" id="person">
             <option th:each="person : ${people}" th:value="${person.id}" th:text="${person.fullName}"></option>
