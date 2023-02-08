@@ -18,15 +18,15 @@ public class PersonValidator implements Validator {
     }
 
     @Override
-    public boolean supports(Class<?> clazz) {
-        return Person.class.equals(clazz);
+    public boolean supports(Class<?> aClass) {
+        return Person.class.equals(aClass);
     }
 
     @Override
-    public void validate(Object target, Errors errors) {
-        Person person = (Person) target;
+    public void validate(Object o, Errors errors) {
+        Person person = (Person) o;
 
-        if(personDAO.getPersonByFullName(person.getFullName()).isPresent())
-            errors.rejectValue("fullName", "","Человек с таким ФИО уже существует");
+        if (personDAO.getPersonByFullName(person.getFullName()).isPresent())
+            errors.rejectValue("fullName", "", "Человек с таким ФИО уже существует");
     }
 }

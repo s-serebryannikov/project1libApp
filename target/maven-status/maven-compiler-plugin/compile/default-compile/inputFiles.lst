@@ -1,8 +1,9 @@
-D:\_Work\libraryApp\libraryApp\src\main\java\ru\serebryannikov\springlibapp\controllers\BookController.java
 D:\_Work\libraryApp\libraryApp\src\main\java\ru\serebryannikov\springlibapp\dao\BookDAO.java
 D:\_Work\libraryApp\libraryApp\src\main\java\ru\serebryannikov\springlibapp\dao\PersonDAO.java
+D:\_Work\libraryApp\libraryApp\src\main\java\ru\serebryannikov\springlibapp\util\PersonValidator.java
 D:\_Work\libraryApp\libraryApp\src\main\java\ru\serebryannikov\springlibapp\config\MySpringMvcDispatcherSerlvetIntitializer.java
 D:\_Work\libraryApp\libraryApp\src\main\java\ru\serebryannikov\springlibapp\controllers\PeopleController.java
+D:\_Work\libraryApp\libraryApp\src\main\java\ru\serebryannikov\springlibapp\controllers\BooksController.java
 D:\_Work\libraryApp\libraryApp\src\main\java\ru\serebryannikov\springlibapp\models\Book.java
 D:\_Work\libraryApp\libraryApp\src\main\java\ru\serebryannikov\springlibapp\models\Person.java
 D:\_Work\libraryApp\libraryApp\src\main\java\ru\serebryannikov\springlibapp\config\SpringConfig.java
